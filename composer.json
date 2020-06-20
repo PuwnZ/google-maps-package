@@ -1,0 +1,24 @@
+{
+    "name": "puwnz/google-maps-package",
+    "description": "Laravel wrapper around google maps library.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pawndev",
+            "email": "coquelet.c@gmail.com"
+        }
+    ],
+    "require": {
+        "puwnz/google-maps-lib": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Puwnz\\GoogleMapsPackage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": "Puwnz\\GoogleMapsPackage\\GoogleMapsServiceProvider"
+        }
+    }
+}
