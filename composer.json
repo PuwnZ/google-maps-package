@@ -2,6 +2,7 @@
     "name": "puwnz/google-maps-package",
     "description": "Laravel wrapper around google maps library.",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Pawndev",
@@ -9,6 +10,8 @@
         }
     ],
     "require": {
+        "php": "^7.3.*",
+        "illuminate/support": "^7.16",
         "puwnz/google-maps-lib": "^0.3.0"
     },
     "autoload": {
@@ -20,5 +23,13 @@
         "laravel": {
             "providers": "Puwnz\\GoogleMapsPackage\\GoogleMapsServiceProvider"
         }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "scripts": {
+        "phpcs": [
+            "php vendor/bin/php-cs-fixer fix --dry-run --diff  --allow-risky=yes"
+        ]
     }
 }
