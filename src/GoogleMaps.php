@@ -1,6 +1,7 @@
 <?php
 
 namespace Puwnz\GoogleMapsPackage;
+
 use Puwnz\GoogleMapsLib\Geocode\GeocodeFactory;
 
 class GoogleMaps
