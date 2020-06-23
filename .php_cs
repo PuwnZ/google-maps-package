@@ -3,8 +3,7 @@
 //list of fixers: https://github.com/FriendsOfPHP/PHP-CS-Fixer
 
 $finder = PhpCsFixer\Finder::create()
-    ->in(__DIR__ . '/src')
-    ->in(__DIR__ . '/tests');
+    ->in(__DIR__ . '/src');
 
 return PhpCsFixer\Config::create()
     ->setRules([
