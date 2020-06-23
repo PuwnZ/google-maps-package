@@ -8,13 +8,12 @@ class GoogleMapsServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-
     }
 
     public function register()
     {
         $this->app->singleton('GoogleMaps', function () {
-            return new \Puwnz\GoogleMapsPackage\GoogleMaps;
+            return new \Puwnz\GoogleMapsPackage\GoogleMaps();
         });
     }
 }
